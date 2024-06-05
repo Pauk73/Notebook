@@ -18,7 +18,7 @@ public class Main {
         System.out.print("Введите команду:"+"\n");
         String command = scanner.nextLine();
 
-        if (command.equals("write")) {
+        if (command.equals("#write")) {
             // Запрашиваем текст у пользователя
             System.out.print("Введите ваши планы на сегодня:"+"\n");
             String text = scanner.nextLine();
@@ -40,7 +40,7 @@ public class Main {
             writer.close();
 
         } else {
-            if (command.equals("read")) {
+            if (command.equals("#read")) {
                 // Считываем данные из файла
                 int c;
                 while ((c = reader.read()) != -1) {
